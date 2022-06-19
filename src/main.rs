@@ -23,10 +23,7 @@ pub fn key_gen(t: u16, n: u16) -> HashMap<u16, MultisigKeys<Ed25519>> {
     );
     machines.insert(
       i,
-      key_gen::StateMachine::<Ed25519>::new(
-        params[&i],
-        "FROST Test key_gen".to_string()
-      )
+      key_gen::StateMachine::<Ed25519>::new(params[&i], "monero-secret-sharing wallet".to_string())
     );
     commitments.insert(
       i,
