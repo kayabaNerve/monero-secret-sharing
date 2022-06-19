@@ -1,6 +1,9 @@
 [package]
 name = "monero-secret-sharing"
 version = "0.1.0"
+description = "Tool to generate Monero secret shares which can be re-combined"
+license = "MIT"
+authors = ["Luke Parker <lukeparker5132@gmail.com>"]
 edition = "2021"
 
 [dependencies]
